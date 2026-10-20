@@ -1,5 +1,10 @@
 # Employee & Task Management System
 
+   **Live Demo**
+
+   - Frontend: https://employee-and-task-management-system.vercel.app
+   - Backend: https://employee-and-task-management-system-n69o.onrender.com
+
 MERN app (React + Vite, Node/Express, MongoDB/Mongoose) for the Roots Media Marketing intern assignment. All business rules live on the backend; the frontend only mirrors field validation for convenience.
 
 ## Setup
