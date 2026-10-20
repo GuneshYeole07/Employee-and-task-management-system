@@ -68,7 +68,7 @@ Deletion is rejected (400) while the employee has Todo / In Progress tasks. Othe
 - Completed and Cancelled tasks cannot be edited but can be deleted.
 - Task IDs may skip a number if a create fails after the counter increments.
 - The assignee dropdown loads up to 200 employees (the options endpoint).
-- Row actions are icon buttons rather than the design's kebab menu (avoids clipping inside the scrolling table).
+- Row actions use a three-dot menu (View / Edit / Delete), rendered in a portal so the scrolling table never clips it.
 
 ## Questions from the assignment
 1. **Where are status transitions validated, and why?** In `changeStatus` → `assertValidTransition` (backend), because anything checked only in the browser can be bypassed by a direct API call. The UI just shows the `allowedStatuses` the server sends. Normal create/edit rejects `status`, so this endpoint is the only door.
