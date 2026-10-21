@@ -22,6 +22,7 @@ app.get('/', (req, res) =>
     hint: 'Try /api/dashboard',
   })
 );
+
 app.use(notFound);
 app.use(errorHandler);
 
