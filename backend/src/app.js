@@ -15,6 +15,13 @@ app.get('/api/health', (req, res) => res.json({ success: true, status: 'ok' }));
 app.use('/api/employees', employeeRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.get('/', (req, res) =>
+  res.json({
+    success: true,
+    message: 'Employee & Task Management API is running',
+    hint: 'Try /api/dashboard',
+  })
+);
 app.use(notFound);
 app.use(errorHandler);
 
